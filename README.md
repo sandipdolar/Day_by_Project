@@ -1,2 +1,1 @@
-# Day_by_Project
-Daily Update Day by Day
+Daily Update of the HTML-CSS-JS Project
