@@ -103,7 +103,6 @@ function showQuestion() {
 
     questionText.textContent = currentQuestion.question;
 
-    // todo: explain this in a second
     answersContainer.innerHTML = "";
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
@@ -150,7 +149,7 @@ function selectAnswer(event) {
         } else {
             showResults();
         }
-    }, 1000);
+    }, 700);
 };
 
 function showResults() {
@@ -177,5 +176,6 @@ function showResults() {
 
 function restartQuiz() {
     resultScreen.classList.remove("active");
+
     startQuiz();
 }
