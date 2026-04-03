@@ -10,13 +10,6 @@ document.addEventListener("keydown", (e) => {
     }
 });
 
-document.addEventListener("keypress", (e) => {
-    if (e.code === "Enter") {
-        e.preventDefault();
-        generatePalette();
-    }
-});
-
 paletteContainer.addEventListener("click", function (e) {
     if (e.target.classList.contains("copy-btn")) {
         const hexValue = e.target.previousElementSibling.textContent;
