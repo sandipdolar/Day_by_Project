@@ -71,6 +71,15 @@ function updateSummary() {
     balanceEl.textContent = formatCurrency(balance);
     incomeAmt.textContent = formatCurrency(income);
     expenseAmt.textContent = formatCurrency(expanse);
+
+    balanceEl.classList.remove("red", "green");
+    if(balance > 0){
+        balanceEl.classList.add("green");
+    }else if(balance < 0){
+        balanceEl.classList.add("red");
+    }else{
+        balanceEl.classList.add("black");
+    }
 }
 
 function formatCurrency(Number) {
