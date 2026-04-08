@@ -1,1 +1,1 @@
-Daily Update of the HTML-CSS-JS Project
+Explain each project
